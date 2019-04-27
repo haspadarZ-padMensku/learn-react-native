@@ -1,10 +1,11 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, StatusBar } from 'react-native';
 
-const Home = () => (
-  <View>
-    <Text>Hello</Text>
-  </View>
+import Container from '../components/Container/Container';
+
+export default () => (
+  <Container>
+    <StatusBar translucent={false} barStyle="default" />
+    <View />
+  </Container>
 );
-
-export default Home;
